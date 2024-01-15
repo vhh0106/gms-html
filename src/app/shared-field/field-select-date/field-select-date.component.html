@@ -1,0 +1,6 @@
+<nz-date-picker class="w-full date-picker nzInline" [ngModel]="innerValue" (ngModelChange)="dateChange($event)"
+                [nzFormat]=" nzFormat ? nzFormat : nzShowTime ? 'dd-MM-yyyy HH:mm': 'dd/MM/yyyy'"
+                [nzAllowClear]="nzAllowClear"
+                [nzPlaceHolder]="nzPlaceHolder"
+                [nzShowTime]="nzShowTime ? { nzFormat: 'HH:mm' }: nzShowTime"></nz-date-picker>
+
