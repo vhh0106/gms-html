@@ -133,12 +133,8 @@
   width: 320px;
   height: 776px;
 }
-.hello-robert {
+infomation{
   position: absolute;
-  top: 20px;
-  left: -1px;
-  font-size: 24px;
-  font-weight: 600;
 }
 .div,
 .div1,
@@ -164,7 +160,7 @@
   position: absolute;
   height: 3.59%;
   width: 5.88%;
-  top: 63.73%;
+  top: 50.20%;
   right: 85.49%;
   bottom: 32.68%;
   left: 8.63%;
@@ -177,14 +173,14 @@
 .group-icon2,
 .vector-icon1,
 .vector-icon2 {
-  top: 56.7%;
+  top: 44.7%;
   bottom: 39.71%;
 }
 .group-icon,
 .group-icon1,
 .group-icon2,
 .vector-icon2 {
-  top: 49.67%;
+  top: 38.67%;
   bottom: 46.73%;
 }
 .group-icon,
@@ -192,27 +188,23 @@
 .group-icon2 {
   height: 0.24%;
   width: 1.8%;
-  top: 66.35%;
+  top: 52.80%;
   right: 87.54%;
   bottom: 33.41%;
   left: 10.66%;
 }
 .group-icon1,
 .group-icon2 {
-  top: 59.32%;
+  top: 47.32%;
   bottom: 40.43%;
 }
 .group-icon2 {
-  top: 52.3%;
+  top: 41.3%;
   bottom: 47.46%;
 }
 .hello-robert-parent {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 259.09px;
-  height: 612px;
-  text-align: left;
+  width: 330px;
 }
 .vector-smart-object2-01 {
   position: absolute;
@@ -222,10 +214,10 @@
   height: 15px;
   overflow: hidden;
 }
-.ellipse-1-copy-8-1 {
+.avatar {
   position: absolute;
   top: 76px;
-  left: 68px;
+  left: 80px;
   width: 140px;
   height: 140px;
   object-fit: cover;
@@ -233,114 +225,23 @@
 .robert-warren {
   position: absolute;
   top: 234px;
-  left: 75px;
+  left: 94px;
   font-size: 18px;
   font-weight: 600;
 }
 .golf-manager {
   position: absolute;
   top: 256px;
-  left: 100px;
+  left: 118px;
   font-size: 12px;
 }
-.profile {
-  position: absolute;
-  top: 1px;
-  left: 22px;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
-  width: 259.09px;
-}
-.dotsthreevertical-icon {
-  position: absolute;
-  height: 4.12%;
-  width: 10%;
-  top: 2.45%;
-  right: 1.88%;
-  bottom: 93.43%;
-  left: 88.13%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
+
 .icons {
   position: relative;
   width: 16px;
   height: 16px;
   overflow: hidden;
   flex-shrink: 0;
-}
-.august-2022 {
-  position: relative;
-  font-weight: 600;
-}
-.icons-parent {
-  align-self: stretch;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.sat {
-  position: relative;
-}
-.month,
-.month-parent {
-  display: flex;
-  flex-direction: row;
-}
-.month {
-  width: 30px;
-  height: 20px;
-  align-items: center;
-  justify-content: center;
-}
-.month-parent {
-  align-self: stretch;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 8px;
-  font-size: 10px;
-  color:rgba(151, 151, 151, 0.8);
-}
-.dateinactive,
-.div2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.div2 {
-  position: relative;
-  line-height: 20px;
-  font-weight: 600;
-  width: 20px;
-  height: 15px;
-  flex-shrink: 0;
-}
-.dateinactive {
-  width: 30px;
-  height: 30px;
-  flex-direction: column;
-}
-.dateinactive-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 8px;
-}
-.dateinactive18 {
-  border-radius: 29px;
-  background-color: #58b000;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.dateactive {
-  color: white;
 }
 
 .frame-parent {

@@ -12,24 +12,26 @@ import {NzMenuModule} from "ng-zorro-antd/menu";
 import {NzSpinModule} from "ng-zorro-antd/spin";
 import {StoreModule} from "@ngrx/store";
 import {workspaceFeatureKey, workspaceReducer} from "./data-access-workspace/workspace.reducer";
+import {NzDividerModule} from "ng-zorro-antd/divider";
 @NgModule({
   declarations: [
     WorkspaceComponent,
 
   ],
-  imports: [
-    CommonModule,
-    LayoutWorkspaceRouting,
-    StoreModule.forFeature(workspaceFeatureKey, workspaceReducer),
-    NzSelectModule,
-    NzIconModule,
-    NzButtonModule,
-    NzFormModule,
-    ReactiveFormsModule,
-    NzLayoutModule,
-    NzMenuModule,
-    NzSpinModule,
-  ]
+    imports: [
+        CommonModule,
+        LayoutWorkspaceRouting,
+        StoreModule.forFeature(workspaceFeatureKey, workspaceReducer),
+        NzSelectModule,
+        NzIconModule,
+        NzButtonModule,
+        NzFormModule,
+        ReactiveFormsModule,
+        NzLayoutModule,
+        NzMenuModule,
+        NzSpinModule,
+        NzDividerModule,
+    ]
 })
 export class LayoutWorkspaceModule {
 
