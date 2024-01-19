@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: () => import('../app/feature-dashboard/feature-dashboard.module').then(m => m.FeatureDashboardModule),
   },
+  {
+    path: 'golfer-information',
+    loadChildren: () => import('../app/feature-golfer-infomation/feature-golfer-information.module').then(m => m.FeatureGolferInformationModule),
+  },
 ];
 
 @NgModule({

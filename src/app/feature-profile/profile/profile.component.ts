@@ -6,9 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent {
-  showText1: boolean = true;
+  isCollapsed = false;
+  isButtonHidden = false;
 
-  toggleText1() {
-    this.showText1 = !this.showText1;
+
+  toggleSidebar() {
+    this.isCollapsed = !this.isCollapsed;
+    this.isButtonHidden = true;
+  }
+
+  showButton() {
+    this.isButtonHidden = false;
+    this.isCollapsed = false;
+
   }
 }

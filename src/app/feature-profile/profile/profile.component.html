@@ -1,6 +1,33 @@
-<div class="account-setting overflow-auto">
-  <nz-sider>
-    <div *ngIf="showText1" class="sidebar">
+<div class="w-full bg-white">
+  <div class="menu-header header-container items-center justify-between relative flex w-full bg-white dark:bg-navy-750 print:hidden">
+    <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>
+    <div class="mr-10 text-black font-semibold	">Reception</div>
+    <div class="mr-10 text-black font-semibold	" id="menuText1">Caddy</div>
+    <div class="mr-10 text-black font-semibold	">Golf Operation</div>
+    <div class="mr-10 text-black font-semibold	">Management</div>
+    <nz-divider class="vertical" nzType="vertical"></nz-divider>
+    <img class="flex w-8" alt="" src="./assets/icon/dotsthreevertical@2x.png"/>
+    <div class="px-1.5 flex">
+      <span>Monday, </span>
+      <span class="mr-1 text-black font-semibold">19 August 2022 </span>
+      <span> | 09:30:12 AM | </span>
+      <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>
+      <span class="mr-1">24°C |</span>
+      <span>Hello </span>
+      <span class="text-sky-500">Robert!</span>
+    </div>
+    <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>
+    <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">
+      <div class="mx-2.5 flex">
+        <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>
+        <img class="w-4 h-4 self-center" alt="" src="./assets/icon/icon--outlined--directions--chevron--left@2x.png"/>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="account-setting">
+  <nz-sider [ngClass]="{'collapsed': isCollapsed}"  (click)="showButton()">
+    <div class="sidebar">
       <div  class="sidebar-1">
         <div  class="sidebar-itembigselected">
           <img class="icon24pxclock" alt="" src="./assets/icon/clock.svg"/>
@@ -84,9 +111,10 @@
       </div>
     </div>
   </nz-sider>
-  <img (click)="toggleText1()" class="muiten" alt="" src="./assets/icon/muiten.png" id="component111Icon"/>
+  <button  *ngIf="!isButtonHidden" (click)="toggleSidebar()">
+    <img class="muiten" alt="" src="./assets/icon/muiten.png"/>
+  </button>
   <div class="container">
-    <div class="flex justify-center">
       <div class="instance-parent">
         <div class="rectangle-wrapper">
           <div class="instance-child"></div>
@@ -259,35 +287,6 @@
           <div>Send email notifications</div>
         </div>
       </div>
-    </div>
-
-  </div>
-  <div class="menu-header">
-    <div class="flex mx-5 my-4 items-center justify-center">
-      <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>
-      <div class="mr-10 font-semibold	">Reception</div>
-      <div class="mr-10 font-semibold	" id="menuText1">Caddy</div>
-      <div class="mr-10 font-semibold	">Golf Operation</div>
-      <div class="mr-10 font-semibold	">Management</div>
-      <nz-divider class="vertical" nzType="vertical"></nz-divider>
-      <img class="flex w-8" alt="" src="./assets/icon/dotsthreevertical@2x.png"/>
-      <div class="px-1.5 flex">
-        <span>Monday, </span>
-        <span class="mr-1 font-semibold">19 August 2022 </span>
-        <span> | 09:30:12 AM | </span>
-        <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>
-        <span class="mr-1">24°C |</span>
-        <span>Hello </span>
-        <span class="text-sky-500">Robert!</span>
-      </div>
-      <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>
-      <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">
-        <div class="mx-2.5 flex">
-          <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>
-          <img class="w-4 h-4 self-center" alt="" src="./assets/icon/icon--outlined--directions--chevron--left@2x.png"/>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
