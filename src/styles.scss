@@ -5,3 +5,44 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
+.table {
+  th:first-child {
+    @apply bg-slate-200 border-black px-4 py-1.5 font-semibold uppercase text-xs text-white rounded-tl-3xl;
+    background-color: #58B000;
+  }
+
+  th:not(:first-child) {
+    @apply bg-slate-200 border-black px-4 py-1.5 font-semibold uppercase text-xs text-white;
+    background-color: #58B000;
+  }
+
+  th:last-child {
+    @apply rounded-tr-3xl
+  }
+
+  td:first-child {
+    @apply border border-black px-4 py-3;
+    border-top: none;
+  }
+
+  td:not(:first-child) {
+    @apply border border-l-0 border-black px-4 py-3;
+    border-top: none;
+  }
+
+  td:last-child {
+    @apply border border-black px-4 py-3 ;
+  }
+}
+
+table thead {
+  min-height: 40px !important;
+  height: 40px;
+}
+
+.ant-btn-link:active, .ant-btn-link:hover, .ant-btn-link:focus {
+  color: #1890ff !important;
+  background: none !important;
+}
+

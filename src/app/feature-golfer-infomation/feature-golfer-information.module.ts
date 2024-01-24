@@ -13,6 +13,8 @@ import {SharedFieldsModule} from "../shared-field/shared-fields.module";
 import {NzLayoutModule} from "ng-zorro-antd/layout";
 import {NzDropDownModule} from "ng-zorro-antd/dropdown";
 import {GolferInformationComponent} from "./golfer-information/golfer-information.component";
+import {NzSpinModule} from "ng-zorro-antd/spin";
+import {NzTableModule} from "ng-zorro-antd/table";
 
 
 @NgModule({
@@ -36,6 +38,8 @@ import {GolferInformationComponent} from "./golfer-information/golfer-informatio
     SharedFieldsModule,
     NzLayoutModule,
     NzDropDownModule,
+    NzSpinModule,
+    NzTableModule,
   ],
   declarations: [
     GolferInformationComponent

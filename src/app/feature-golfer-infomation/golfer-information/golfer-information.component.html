@@ -1,27 +1,397 @@
-<div class="w-full bg-white">
-  <div
-    class="menu-header header-container items-center justify-between relative flex w-full bg-white dark:bg-navy-750 print:hidden">
-    <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>
-    <div class="mr-10 text-black font-semibold	">Reception</div>
-    <div class="mr-10 text-black font-semibold	" id="menuText1">Caddy</div>
-    <div class="mr-10 text-black font-semibold	">Golf Operation</div>
-    <div class="mr-10 text-black font-semibold	">Management</div>
-    <nz-divider class="vertical" nzType="vertical"></nz-divider>
-    <img class="flex w-8" alt="" src="./assets/icon/dotsthreevertical@2x.png"/>
-    <div class="px-1.5 flex">
-      <span>Monday, </span>
-      <span class="mr-1 text-black font-semibold">19 August 2022 </span>
-      <span> | 09:30:12 AM | </span>
-      <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>
-      <span class="mr-1">24°C |</span>
-      <span>Hello </span>
-      <span class="text-sky-500">Robert!</span>
+<div class="w-full min-h-screen	" style="background-color: #f4f4f4">
+  <div class="w-screen bg-white">
+    <div class="menu-header header-container items-center justify-between relative flex w-full bg-white">
+      <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>
+      <div class="mr-10 text-black font-semibold	">Reception</div>
+      <div class="mr-10 text-black font-semibold	" id="menuText1">Caddy</div>
+      <div class="mr-10 text-black font-semibold	">Golf Operation</div>
+      <div class="mr-10 text-black font-semibold	">Management</div>
+      <nz-divider class="vertical" nzType="vertical"></nz-divider>
+      <img class="flex w-8" alt="" src="./assets/icon/dotsthreevertical@2x.png"/>
+      <div class="px-1.5 flex">
+        <span>Monday, </span>
+        <span class="mr-1 text-black font-semibold">19 August 2022 </span>
+        <span> | 09:30:12 AM | </span>
+        <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>
+        <span class="mr-1">24°C |</span>
+        <span>Hello </span>
+        <span class="text-sky-500">Robert!</span>
+      </div>
+      <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>
+      <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">
+        <div class="mx-2.5 flex">
+          <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>
+          <img class="w-4 h-4 self-center" alt="" src="./assets/icon/icon--outlined--directions--chevron--left@2x.png"/>
+        </div>
+      </div>
     </div>
-    <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>
-    <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">
-      <div class="mx-2.5 flex">
-        <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>
-        <img class="w-4 h-4 self-center" alt="" src="./assets/icon/icon--outlined--directions--chevron--left@2x.png"/>
+  </div>
+  <div class="p-8 mt-8 bg-white shadow-md rounded-3xl mx-5">
+    <div class="flex items-center justify-between mb-4 ">
+      <div class="flex items-center">
+        <span class="mr-3" nz-icon nzType="arrow-left" nzTheme="outline" style="color: black"></span>
+        <h2 class="text-2xl font-bold text-gray-800 uppercase">Golfer Information</h2>
+      </div>
+      <div class="flex">
+        <button class="btn py-1.5 bg-blue-500 font-medium text-sm	text-white hover:bg-blue-400">Booked</button>
+        <button class="btn py-1.5 font-medium text-sm rounded-sm bg-green-600 hover:bg-green-500 text-white ml-3.5">
+          Checkin
+        </button>
+      </div>
+    </div>
+    <div class="grid grid-cols-4 gap-4">
+      <div class="relative">
+        <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Golfer
+          Name</label>
+        <input type="text"
+               class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+      </div>
+      <div class="grid grid-cols-2 gap2">
+        <div class="pr-3 relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Bagtag</label>
+          <input type="text"
+                 class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Hole</label>
+          <input type="text"
+                 class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+      </div>
+      <div class="relative">
+        <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Phone</label>
+        <input type="text"
+               class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+      </div>
+      <div class="grid grid-cols-2 gap2">
+        <div class="pr-3 relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Gender</label>
+          <input type="text"
+                 class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Country</label>
+          <input type="text"
+                 class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+      </div>
+      <div class="relative">
+        <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Class</label>
+        <input type="text"
+               class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+      </div>
+      <div class="relative">
+        <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Rate Code</label>
+        <input type="text"
+               class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+      </div>
+      <div class="relative">
+        <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Member No</label>
+        <input type="text"
+               class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+      </div>
+      <div class="relative">
+        <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Caddy
+          Booking</label>
+        <input type="text"
+               class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+      </div>
+    </div>
+  </div>
+  <div class="h-screen p-6 mt-5 bg-white shadow-md rounded-t-3xl mx-5">
+    <div class="is-scrollbar-hidden min-w-full overflow-x-auto p-4 bg-white">
+      <div class="is-scrollbar-hidden min-w-full overflow-x-auto rounded-lg ">
+        <div class="w-full overflow-auto">
+          <table class="w-full text-left table">
+            <thead>
+            <tr>
+              <th>Tee Time</th>
+              <th>Player 1</th>
+              <th>Player 2</th>
+              <th>Player 3</th>
+              <th>Player 4</th>
+              <th>Player 5</th>
+              <th>Player 6</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><a class="ant-btn-link">A - 06:30</a></td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+            </tr>
+            <tr>
+              <td><a class="ant-btn-link">A - 06:30</a></td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+            </tr>
+            <tr>
+              <td><a class="ant-btn-link">A - 06:30</a></td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+            </tr>
+            <tr>
+              <td><a class="ant-btn-link">A - 06:30</a></td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+            </tr>
+            <tr>
+              <td><a class="ant-btn-link">A - 06:30</a></td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+            </tr>
+            <tr>
+              <td><a class="ant-btn-link">A - 06:30</a></td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+            </tr>
+            <tr>
+              <td><a class="ant-btn-link">A - 06:30</a></td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+              <td class="whitespace-nowrap">
+                <div class="flex font-bold text-black mb-2"><img class="mr-1.5 h-max self-center"
+                                                                 src="assets/icon/fig.png">LE GIANG
+                </div>
+                <div>Giá golf dành cho nhân viên</div>
+              </td>
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
