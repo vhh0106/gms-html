@@ -1,0 +1,30 @@
+// Custom Theming for NG-ZORRO
+// For more information: https://ng.ant.design/docs/customize-theme/en
+@import "../node_modules/ng-zorro-antd/ng-zorro-antd.less";
+
+// Override less variables to here
+// View all variables: https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/components/style/themes/default.less
+
+
+.btn-primary, .ant-btn:focus {
+  color: white;
+  border: #0053B6;
+  background-color: #0053B6;
+}
+
+
+.dropdown-menu-quick {
+  .ant-dropdown-menu {
+    margin-top: 1rem
+  }
+}
+
+.ant-select-selection-item-remove {
+@apply items-center;
+  display: flex !important;
+
+}
+
+cdk-virtual-scroll-viewport {
+  min-height: 50px !important;
+}

@@ -10,6 +10,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {vi as fnsVi} from "date-fns/locale";
 import {en_US, NZ_DATE_LOCALE, NZ_I18N} from "ng-zorro-antd/i18n";
 import {FullscreenOverlayContainer, OverlayContainer} from '@angular/cdk/overlay';
+import {AngularSvgIconModule} from "angular-svg-icon";
 
 const ngZorroConfig: NzConfig = {
   modal: {
@@ -27,6 +28,7 @@ const ngZorroConfig: NzConfig = {
     RouterOutlet,
     AppRoutingModule,
     StoreModule.forRoot({}, {}),
+    AngularSvgIconModule.forRoot(),
     HttpClientModule,
 
   ],

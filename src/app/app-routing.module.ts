@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'golfer-information',
     loadChildren: () => import('../app/feature-golfer-infomation/feature-golfer-information.module').then(m => m.FeatureGolferInformationModule),
   },
+  {
+    path: 'group-golfer-information',
+    loadChildren: () => import('../app/feature-group-golfer-information/feature-group-golfer-information.module').then(m => m.FeatureGroupGolferInformationModule),
+  },
 ];
 
 @NgModule({

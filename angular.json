@@ -34,6 +34,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "src/theme.less",
               "src/assets/css/app.css"
             ],
             "scripts": ["src/assets/js/app.js"]
@@ -94,6 +95,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "src/theme.less",
               "src/assets/css/app.css"
             ],
             "scripts": ["src/assets/js/app.js"]
