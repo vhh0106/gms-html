@@ -13,30 +13,36 @@ import {NzDatePickerModule} from "ng-zorro-antd/date-picker";
 import {SharedFieldsModule} from "../shared-field/shared-fields.module";
 import {NzLayoutModule} from "ng-zorro-antd/layout";
 import {NzDropDownModule} from "ng-zorro-antd/dropdown";
+import {NzFormModule} from "ng-zorro-antd/form";
+import {NzTableModule} from "ng-zorro-antd/table";
+import {SharedIconModule} from "../shared-icon/shared-icon.module";
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: ProfileComponent,
-        data: {breadcrumb: 'profile'},
-      }
-    ]),
-    NzIconModule,
-    NzInputModule,
-    NzCheckboxModule,
-    NzDividerModule,
-    NzAvatarModule,
-    NzCardModule,
-    NzDatePickerModule,
-    SharedFieldsModule,
-    NzLayoutModule,
-    NzDropDownModule,
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        RouterModule.forChild([
+            {
+                path: '',
+                component: ProfileComponent,
+                data: {breadcrumb: 'profile'},
+            }
+        ]),
+        NzIconModule,
+        NzInputModule,
+        NzCheckboxModule,
+        NzDividerModule,
+        NzAvatarModule,
+        NzCardModule,
+        NzDatePickerModule,
+        SharedFieldsModule,
+        NzLayoutModule,
+        NzDropDownModule,
+        NzFormModule,
+        NzTableModule,
+        SharedIconModule,
+    ],
   declarations: [
     ProfileComponent
   ]

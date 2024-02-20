@@ -1,33 +1,33 @@
 <div class="w-full min-h-screen	" style="background-color: #f4f4f4">
-  <div class="w-screen bg-white">
-    <div class="menu-header header-container items-center justify-between relative flex w-full bg-white">
-      <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>
-      <div class="mr-10 text-black font-semibold	">Reception</div>
-      <div class="mr-10 text-black font-semibold	" id="menuText1">Caddy</div>
-      <div class="mr-10 text-black font-semibold	">Golf Operation</div>
-      <div class="mr-10 text-black font-semibold	">Management</div>
-      <nz-divider class="vertical" nzType="vertical"></nz-divider>
-      <img class="flex w-8" alt="" src="./assets/icon/dotsthreevertical@2x.png"/>
-      <div class="px-1.5 flex">
-        <span>Monday, </span>
-        <span class="mr-1 text-black font-semibold">19 August 2022 </span>
-        <span> | 09:30:12 AM | </span>
-        <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>
-        <span class="mr-1">24°C |</span>
-        <span>Hello </span>
-        <span class="text-sky-500">Robert!</span>
-      </div>
-      <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>
-      <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">
-        <div class="mx-2.5 flex">
-          <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>
-          <img class="w-4 h-4 self-center" alt="" src="./assets/icon/icon--outlined--directions--chevron--left@2x.png"/>
-        </div>
-      </div>
-    </div>
-  </div>
+<!--  <div class="w-screen bg-white">-->
+<!--    <div class="menu-header header-container items-center justify-between relative flex w-full bg-white">-->
+<!--      <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>-->
+<!--      <div class="mr-10 text-black font-semibold	">Reception</div>-->
+<!--      <div class="mr-10 text-black font-semibold	" id="menuText1">Caddy</div>-->
+<!--      <div class="mr-10 text-black font-semibold	">Golf Operation</div>-->
+<!--      <div class="mr-10 text-black font-semibold	">Management</div>-->
+<!--      <nz-divider class="vertical" nzType="vertical"></nz-divider>-->
+<!--      <img class="flex w-8" alt="" src="./assets/icon/dotsthreevertical@2x.png"/>-->
+<!--      <div class="px-1.5 flex">-->
+<!--        <span>Monday, </span>-->
+<!--        <span class="mr-1 text-black font-semibold">19 August 2022 </span>-->
+<!--        <span> | 09:30:12 AM | </span>-->
+<!--        <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>-->
+<!--        <span class="mr-1">24°C |</span>-->
+<!--        <span>Hello </span>-->
+<!--        <span class="text-sky-500">Robert!</span>-->
+<!--      </div>-->
+<!--      <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>-->
+<!--      <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">-->
+<!--        <div class="mx-2.5 flex">-->
+<!--          <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>-->
+<!--          <img class="w-4 h-4 self-center" alt="" src="./assets/icon/icon&#45;&#45;outlined&#45;&#45;directions&#45;&#45;chevron&#45;&#45;left@2x.png"/>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
   <div class="p-8 mt-8 bg-white shadow-md rounded-3xl mx-5">
-    <div class="flex items-center justify-between mb-4 ">
+    <div class="flex flex-col items-center space-y-4 px-4 py-2 sm:flex-row sm:justify-between sm:space-y-0 sm:px-5">
       <div class="flex items-center">
         <span class="mr-3" nz-icon nzType="arrow-left" nzTheme="outline" style="color: black"></span>
         <h2 class="text-2xl font-bold text-gray-800 uppercase">Golfer Information</h2>
@@ -39,7 +39,8 @@
         </button>
       </div>
     </div>
-    <div class="grid grid-cols-4 gap-4">
+    <div class="grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6 mt-3">
+      <div class="col-span-12 grid lg:grid-cols-4 lg:gap-4 sm:gap-5 gap-4">
       <div class="relative">
         <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Golfer
           Name</label>
@@ -95,6 +96,7 @@
           Booking</label>
         <input type="text"
                class="appearance-none border w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+      </div>
       </div>
     </div>
   </div>

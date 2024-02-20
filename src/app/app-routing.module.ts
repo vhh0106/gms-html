@@ -4,7 +4,7 @@ import {RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('../app/layout-workspace/layout-workspace.module').then(m => m.LayoutWorkspaceModule),
+    loadChildren: () => import('../app/feature-login/feature-login.module').then(m => m.FeatureLoginModule),
   },
   {
     path: 'login',

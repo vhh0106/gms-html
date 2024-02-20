@@ -46,3 +46,9 @@ table thead {
   background: none !important;
 }
 
+.border-gray {
+  @apply my-3 h-px;
+  background-color: #979797;
+  opacity: 50%;
+}
+

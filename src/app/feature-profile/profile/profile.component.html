@@ -1,292 +1,152 @@
-<div class="w-full bg-white">
-  <div class="menu-header header-container items-center justify-between relative flex w-full bg-white dark:bg-navy-750 print:hidden">
-    <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>
-    <div class="mr-10 text-black font-semibold	">Reception</div>
-    <div class="mr-10 text-black font-semibold	" id="menuText1">Caddy</div>
-    <div class="mr-10 text-black font-semibold	">Golf Operation</div>
-    <div class="mr-10 text-black font-semibold	">Management</div>
-    <nz-divider class="vertical" nzType="vertical"></nz-divider>
-    <img class="flex w-8" alt="" src="./assets/icon/dotsthreevertical@2x.png"/>
-    <div class="px-1.5 flex">
-      <span>Monday, </span>
-      <span class="mr-1 text-black font-semibold">19 August 2022 </span>
-      <span> | 09:30:12 AM | </span>
-      <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>
-      <span class="mr-1">24°C |</span>
-      <span>Hello </span>
-      <span class="text-sky-500">Robert!</span>
+<div class="w-full min-h-screen	" style="background-color: #f4f4f4">
+  <!--<div-->
+  <!--    class="menu-header header-container items-center justify-between relative flex w-full bg-white dark:bg-navy-750 print:hidden">-->
+  <!--    <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>-->
+  <!--    <div class="mr-10 text-black font-semibold	">Reception</div>-->
+  <!--    <div class="mr-10 text-black font-semibold	" id="menuText1">Caddy</div>-->
+  <!--    <div class="mr-10 text-black font-semibold	">Golf Operation</div>-->
+  <!--    <div class="mr-10 text-black font-semibold	">Management</div>-->
+  <!--    <nz-divider class="vertical" nzType="vertical"></nz-divider>-->
+  <!--    <img class="flex w-8" alt="" src="./assets/icon/dotsthreevertical@2x.png"/>-->
+  <!--    <div class="px-1.5 flex">-->
+  <!--      <span>Monday, </span>-->
+  <!--      <span class="mr-1 text-black font-semibold">19 August 2022 </span>-->
+  <!--      <span> | 09:30:12 AM | </span>-->
+  <!--      <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>-->
+  <!--      <span class="mr-1">24°C |</span>-->
+  <!--      <span>Hello </span>-->
+  <!--      <span class="text-sky-500">Robert!</span>-->
+  <!--    </div>-->
+  <!--    <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>-->
+  <!--    <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">-->
+  <!--      <div class="mx-2.5 flex">-->
+  <!--        <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>-->
+  <!--        <img class="w-4 h-4 self-center" alt="" src="./assets/icon/icon&#45;&#45;outlined&#45;&#45;directions&#45;&#45;chevron&#45;&#45;left@2x.png"/>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <div class="grid grid-cols-12 gap-4">
+    <div class="col-span-12 lg:col-span-9 bg-white my-5 ml-5 mr-5 lg:ml-5 shadow-md p-5 lg:mx-0 rounded-3xl">
+      <div class="font-semibold text-gray-800 text-xl">Profile Settings</div>
+      <div class="mt-3">Dashboard / Account Setting</div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-6 text-black">
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">First
+            Name</label>
+          <input type="text"
+                 class="appearance-none border border-gray-900 w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Last
+            Name</label>
+          <input type="text"
+                 class="appearance-none border border-gray-900 w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Email</label>
+          <input type="text"
+                 class="appearance-none border border-gray-900 w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Gender</label>
+          <input type="text"
+                 class="appearance-none border border-gray-900 w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Phone</label>
+          <input type="text"
+                 class="appearance-none border border-gray-900 w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Birthday</label>
+          <input type="text"
+                 class="appearance-none border border-gray-900 w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2"
+                 style="position: absolute; top: -10px;">Department</label>
+          <input type="text"
+                 class="appearance-none border border-gray-900 w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Address</label>
+          <input type="text"
+                 class="appearance-none border border-gray-900 w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+      </div>
+      <div class="font-semibold text-gray-800 text-xl mt-5">Account Settings</div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mt-6">
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Default
+            Language</label>
+          <input type="text"
+                 class="appearance-none border border-gray-900 w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+        <div class="relative">
+          <label class="block text-gray-700 ml-2 bg-white px-2" style="position: absolute; top: -10px;">Default
+            Currency</label>
+          <input type="text"
+                 class="appearance-none border border-gray-900 w-full py-4 px-3 leading-tight focus:outline-none focus:shadow-outline text-black text-sm">
+        </div>
+      </div>
+      <div class="mt-6 text-gray-800 text-xl font-semibold">Notification</div>
+      <div class="flex"><label class="mt-5 mr-3" nz-checkbox></label>
+        <div class="text-gray-800 self-center mt-5">Receive push notifications</div>
+      </div>
+      <div class="flex"><label class="mr-3 mt-5" nz-checkbox></label>
+        <div class="text-gray-800 self-center mt-5">Send email notifications</div>
+      </div>
+      <div class="flex justify-center items-center mt-3.5">
+        <button class="btn py-1.5 font-medium text-sm rounded-sm bg-green-500 hover:bg-green-400 text-white ">
+          Save
+        </button>
+        <button class="btn py-1.5 bg-gray-300 font-medium text-sm text-black hover:bg-gray-200 ml-3.5">Cancel</button>
+      </div>
     </div>
-    <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>
-    <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">
-      <div class="mx-2.5 flex">
-        <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>
-        <img class="w-4 h-4 self-center" alt="" src="./assets/icon/icon--outlined--directions--chevron--left@2x.png"/>
+    <div class="col-span-12 lg:col-span-3 h-screen bg-white my-5 mr-5 ml-5 lg:mr-5 shadow-md p-5 rounded-3xl">
+      <div class="flex items-center space-y-0 px-4 py-2 flex-row justify-between sm:space-y-0 sm:px-5">
+        <div class="text-2xl font-semibold text-black">Hello Robert!</div>
+        <button nz-button class="text-xl h-8 w-8 cursor-pointer" nzPlacement="bottomRight" nzTrigger="click"
+                nz-dropdown
+                [nzDropdownMenu]="menu">
+          <span nz-icon nzType="more" nzTheme="outline"></span>
+        </button>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu>
+            <li nz-menu-item>Edit</li>
+            <li nz-menu-item>Upload Avatar</li>
+            <li nz-menu-item>Change Password</li>
+          </ul>
+        </nz-dropdown-menu>
+      </div>
+      <div class="flex justify-center mt-5">
+        <nz-avatar [nzSize]="120" nzIcon="user"></nz-avatar>
+      </div>
+      <div class="flex flex-col justify-center items-center mt-5 text-black">
+        <div class="font-semibold text-xl">Robert Warren</div>
+        <div>Golf Manager</div>
+      </div>
+      <div class="mt-8 ml-10 text-black">
+        <div class="flex mb-6">
+          <app-svg-icon class="w-5 mr-2" [icon]="'Group'"
+                        [svgStyle]="{width: '1rem'}"></app-svg-icon>
+          <div>robertwarren@gmail.com</div>
+        </div>
+        <div class="flex mb-6">
+          <app-svg-icon class="w-5 mr-2" [icon]="'Group'"
+                        [svgStyle]="{width: '1rem'}"></app-svg-icon>
+          <div>+84 0123 456789</div>
+        </div>
+        <div class="flex">
+          <app-svg-icon class="w-5 mr-2" [icon]="'Group'"
+                        [svgStyle]="{width: '1rem'}"></app-svg-icon>
+          <div>24/08/2022  </div>
+        </div>
+      </div>
+      <div class="border-gray mt-5"></div>
+      <div class="flex justify-center">
+        <nz-date-picker [nzBackdrop]="false" [nzSize]="'small'" nzInline></nz-date-picker>
       </div>
     </div>
   </div>
 </div>
-<div class="account-setting">
-  <nz-sider [ngClass]="{'collapsed': isCollapsed}"  (click)="showButton()">
-    <div class="sidebar">
-      <div  class="sidebar-1">
-        <div  class="sidebar-itembigselected">
-          <img class="icon24pxclock" alt="" src="./assets/icon/clock.svg"/>
-          <div class="text">Dashboard</div>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="./assets/icon/clock.svg"/>
-
-          <div class="text1">Reservation</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="./assets/icon/clock.svg"/>
-
-          <div class="text1">Will Checkin</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="./assets/icon/clock.svg"/>
-
-          <div class="text1">Driving Range</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault3">
-          <img class="clock-icon" alt="" src="./assets/icon/clock.svg"/>
-
-          <div class="text1">List Golfer</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="./assets/icon/clock.svg"/>
-
-          <div class="text1">Daily Golfer</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="./assets/icon/clock.svg"/>
-
-          <div class="text1">Merge Group</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="./assets/icon/clock.svg"/>
-
-          <div class="text1">Change Flight</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="./assets/icon/clock.svg"/>
-
-          <div class="text1">Management</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="./assets/icon/clock.svg"/>
-
-          <div class="text1">Caddy Booking</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault3">
-          <img class="clock-icon" alt="" src="./assets/icon/clock.svg"/>
-
-          <div class="text1">Merge Invoice</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="icon24pxsettings" alt="" src="./assets/icon/setting.svg"/>
-          <div class="text1">Setting</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-      </div>
-      <div class="sidebar-itembigdefault11">
-        <img class="icon24pxsettings" alt="" src="./assets/icon/Log out.svg"/>
-        <div class="text1">Logout</div>
-        <img class="arrowlineright2-icon" alt=""/>
-      </div>
-      <div class="sidebar-itembigdefault12">
-        <img class="clock-icon" alt="" src="./assets/icon/headphone.svg"/>
-        <div class="text1">Support</div>
-        <img class="arrowlineright2-icon" alt=""/>
-      </div>
-    </div>
-  </nz-sider>
-  <button  *ngIf="!isButtonHidden" (click)="toggleSidebar()">
-    <img class="muiten" alt="" src="./assets/icon/muiten.png"/>
-  </button>
-  <div class="container">
-      <div class="instance-parent">
-        <div class="rectangle-wrapper">
-          <div class="instance-child"></div>
-        </div>
-        <div class="flex hello-robert-parent">
-          <div class="flex mt-5 ml-5 text-2xl font-semibold">
-            <div>Hello Robert!</div>
-            <button nz-button class="text-xl h-8 w-8 cursor-pointer ml-32	" nzPlacement="bottomRight" nzTrigger="click"
-                    nz-dropdown
-                    [nzDropdownMenu]="menu">
-              <span nz-icon nzType="more" nzTheme="outline"></span>
-            </button>
-            <nz-dropdown-menu #menu="nzDropdownMenu">
-              <ul nz-menu>
-                <li nz-menu-item>Edit</li>
-                <li nz-menu-item>Upload Avatar</li>
-                <li nz-menu-item>Change Password</li>
-              </ul>
-            </nz-dropdown-menu>
-          </div>
-        </div>
-        <div class="robertwarrengmailcom font-semibold">robertwarren@gmail.com</div>
-        <div class="div font-semibold">+84 0123 456789</div>
-        <div class="div1 font-semibold">24/08/2022</div>
-        <img class="vector-icon" alt="" src="./assets/icon/vector.png"/>
-        <img class="vector-icon1" alt="" src="./assets/icon/vector.png"/>
-        <img class="vector-icon2" alt="" src="./assets/icon/vector.png"/>
-        <img class="group-icon" alt="" src="./assets/icon/group.svg"/>
-        <img class="group-icon1" alt="" src="./assets/icon/group.svg"/>
-        <img class="group-icon2" alt="" src="./assets/icon/group.svg"/>
-        <img class="avatar" alt="" src="./assets/icon/ellipse-1-copy-8-1@2x.png"/>
-        <div class="robert-warren">Robert Warren</div>
-        <div class="golf-manager">Golf Manager</div>
-        <img class="group-child" alt="" src="./assets/icon/line-2.svg"/>
-        <nz-date-picker class="calendar" nzInline></nz-date-picker>
-      </div>
-      <div class="instance-group">
-        <div class="rectangle-container">
-          <div class="instance-child"></div>
-        </div>
-        <div class="button-parent">
-          <div class="button">
-            <div class="save">Save</div>
-          </div>
-          <div class="button1">
-            <div class="cancel">Cancel</div>
-          </div>
-        </div>
-        <div class="field">
-          <div class="field-child"></div>
-          <div class="text-wrapper">
-            <div class="text14">
-              <div class="sat">First Name</div>
-            </div>
-            <input class="form-input bg-transparent p-1.5 w-96" style="border: 0 solid #e5e7eb" type="text">
-          </div>
-          <img class="button-icon" alt="" src="./assets/icon/button@2x.png"/>
-        </div>
-        <div class="field1">
-          <div class="field-child"></div>
-          <div class="text-wrapper">
-            <div class="text14">
-              <div class="sat">Email</div>
-            </div>
-            <input class="form-input bg-transparent p-1.5 w-96" style="border: 0 solid #e5e7eb" type="text">
-          </div>
-          <img class="button-icon" alt="" src="./assets/icon/button@2x.png"/>
-        </div>
-        <div class="field2">
-          <div class="field-child"></div>
-          <div class="text-frame">
-            <div class="text14">
-              <div class="sat">Phone</div>
-            </div>
-            <input class="form-input bg-transparent p-1.5 w-96" style="border: 0 solid #e5e7eb" type="text">
-          </div>
-          <img class="button-icon" alt="" src="./assets/icon/button@2x.png"/>
-        </div>
-        <div class="field3">
-          <div class="field-child"></div>
-          <div class="text-wrapper">
-            <div class="text14">
-              <div class="sat">Department</div>
-            </div>
-            <input class="form-input bg-transparent p-1.5 w-96" style="border: 0 solid #e5e7eb" type="text">
-          </div>
-          <img class="button-icon" alt="" src="./assets/icon/button@2x.png"/>
-        </div>
-        <div class="field4">
-          <div class="field-child"></div>
-          <div class="text-wrapper">
-            <div class="text14">
-              <div class="sat">Default Language</div>
-            </div>
-            <input class="form-input bg-transparent p-1.5 w-96" style="border: 0 solid #e5e7eb" type="text">
-
-          </div>
-          <img class="button-icon" alt="" src="./assets/icon/button@2x.png"/>
-        </div>
-        <div class="field5">
-          <div class="field-child"></div>
-          <div class="text-wrapper">
-            <div class="text14">
-              <div class="sat">Last Name</div>
-            </div>
-            <input class="form-input bg-transparent p-1.5 w-96" style="border: 0 solid #e5e7eb" type="text">
-
-          </div>
-          <img class="button-icon" alt="" src="./assets/icon/button@2x.png"/>
-        </div>
-        <div class="field6">
-          <div class="field-child"></div>
-          <div class="text-wrapper">
-            <div class="text14">
-              <div class="sat">Gender</div>
-            </div>
-            <input class="form-input bg-transparent p-1.5 w-96" style="border: 0 solid #e5e7eb" type="text">
-
-          </div>
-          <img class="button-icon" alt="" src="./assets/icon/button@2x.png"/>
-        </div>
-        <div class="field7">
-          <div class="field-child"></div>
-          <div class="text-wrapper">
-            <div class="text14">
-              <div class="sat">Birthday</div>
-            </div>
-            <input class="form-input bg-transparent p-1.5 w-96" style="border: 0 solid #e5e7eb" type="text">
-
-          </div>
-          <img class="button-icon" alt="" src="./assets/icon/button@2x.png"/>
-        </div>
-        <div class="field8">
-          <div class="field-child"></div>
-          <div class="text-wrapper">
-            <div class="text14">
-              <div class="sat">Address</div>
-            </div>
-            <input class="form-input bg-transparent p-1.5 w-96" style="border: 0 solid #e5e7eb" type="text">
-          </div>
-          <img class="button-icon" alt="" src="./assets/icon/button@2x.png"/>
-        </div>
-        <div class="field9">
-          <div class="field-child"></div>
-          <div class="text-wrapper">
-            <div class="text14">
-              <div class="sat">Default Currency</div>
-            </div>
-            <input class="form-input bg-transparent p-1.5 w-96" style="border: 0 solid #e5e7eb" type="text">
-          </div>
-          <img class="button-icon" alt="" src="./assets/icon/button@2x.png"/>
-        </div>
-        <div class="account-settings-title">Account Settings</div>
-        <div class="title">Profile Settings</div>
-        <div class="flex breadcrumb">
-
-          <div class="button2">
-            <div class="label">Dashboard</div>
-          </div>
-          <div class="div33">/</div>
-          <div class="button3">
-            <div class="label">Account Setting</div>
-          </div>
-        </div>
-        <div class="notifications">Notifications</div>
-        <div class="receive-push-notifications flex"><label class="mt-px mr-1.5" nz-checkbox></label>
-          <div>Receive push notifications</div>
-        </div>
-        <div class="send-email-notifications flex"><label class="mt-px mr-1.5" nz-checkbox></label>
-          <div>Send email notifications</div>
-        </div>
-      </div>
-  </div>
-</div>
-
