@@ -13,25 +13,29 @@ import {NzSpinModule} from "ng-zorro-antd/spin";
 import {StoreModule} from "@ngrx/store";
 import {workspaceFeatureKey, workspaceReducer} from "./data-access-workspace/workspace.reducer";
 import {NzDividerModule} from "ng-zorro-antd/divider";
+import {AngularSvgIconModule} from "angular-svg-icon";
+import {SharedIconModule} from "../shared-icon/shared-icon.module";
 @NgModule({
   declarations: [
     WorkspaceComponent,
 
   ],
-    imports: [
-        CommonModule,
-        LayoutWorkspaceRouting,
-        StoreModule.forFeature(workspaceFeatureKey, workspaceReducer),
-        NzSelectModule,
-        NzIconModule,
-        NzButtonModule,
-        NzFormModule,
-        ReactiveFormsModule,
-        NzLayoutModule,
-        NzMenuModule,
-        NzSpinModule,
-        NzDividerModule,
-    ]
+  imports: [
+    CommonModule,
+    LayoutWorkspaceRouting,
+    StoreModule.forFeature(workspaceFeatureKey, workspaceReducer),
+    NzSelectModule,
+    NzIconModule,
+    NzButtonModule,
+    NzFormModule,
+    ReactiveFormsModule,
+    NzLayoutModule,
+    NzMenuModule,
+    NzSpinModule,
+    NzDividerModule,
+    AngularSvgIconModule,
+    SharedIconModule,
+  ]
 })
 export class LayoutWorkspaceModule {
 

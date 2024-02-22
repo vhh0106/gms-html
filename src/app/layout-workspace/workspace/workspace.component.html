@@ -1,5 +1,5 @@
 <!--<div class="menu-header">-->
-<!--  <div class="flex mx-5 my-4 items-center justify-center">-->
+<!--  <div class="flex mx-5 my-4 items-center justify-center text-black">-->
 <!--    <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>-->
 <!--    <div class="mr-10 font-semibold	">Reception</div>-->
 <!--    <div class="mr-10 font-semibold	" id="menuText1">Caddy</div>-->
@@ -25,5 +25,79 @@
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
-
-
+<div class="flex w-screen h-screen pt-10">
+  <div [ngClass]="{'collapsed': isCollapsed}" (click)="showButton()"
+       class="flex flex-col h-full overflow-hidden text-gray-400 rounded-tr-3xl px-2" style="background-color: #9ED000">
+    <div class="menu is-scrollbar-hidden items-center flex grow flex-col space-y-2 overflow-y-auto pt-3">
+      <a class="flex items-center text-black w-full h-9 px-3 rounded-3xl hover:bg-white hover:text-blue-500"
+         href="#">
+        <app-svg-icon class="w-5 mr-2 hover:fill-blue-500" [icon]="'clock'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span class="text-sm font-medium">Dasboard</span>
+      </a>
+      <a class="flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500" href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'clock'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span class="text-sm font-medium">Reservation</span>
+      </a>
+      <a class="flex items-center text-black w-full h-10 px-3 hover:bg-white hover:text-blue-500 rounded-3xl" href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'clock'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span class="text-sm font-medium">Will Checkin</span>
+      </a>
+      <a class="flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500" href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'clock'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span class="text-sm font-medium">Driving Range</span>
+      </a>
+      <a class="flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500" href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'clock'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span class="text-sm font-medium">List Golfer</span>
+      </a>
+      <a class="flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500" href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'clock'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span class="text-sm font-medium">Daily Golfer</span>
+      </a>
+      <a class="flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500" href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'clock'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span class="text-sm font-medium">Change Flight</span>
+      </a>
+      <a class="flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500" href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'clock'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span class="text-sm font-medium">Management</span>
+      </a>
+      <a class="flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500" href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'clock'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span class="text-sm font-medium pr-2">Caddy Booking</span>
+      </a>
+      <a class="relative flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500"
+         href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'clock'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span class="text-sm font-medium">Setting</span>
+      </a>
+    </div>
+    <div class="flex flex-col">
+      <a class="relative flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500"
+         href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'headphone'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span *ngIf="!isButtonHidden" class="text-sm font-medium">Support</span>
+      </a>
+      <a class="relative flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500"
+         href="#">
+        <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'logout'"
+                      [svgStyle]="{width: '1rem'}"></app-svg-icon>
+        <span *ngIf="!isButtonHidden" class="text-sm font-medium">Logout</span>
+      </a>
+    </div>
+  </div>
+  <button class="flex" *ngIf="!isButtonHidden" (click)="toggleSidebar()">
+    <img class="w-12 mt-4 rotate-180" style="margin-left: -14px" alt="" src="./assets/icon/muiten.png"/>
+  </button>
+</div>

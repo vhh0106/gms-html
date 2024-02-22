@@ -1,31 +1,22 @@
-import {Component, OnInit} from '@angular/core';
-import {Store} from "@ngrx/store";
-import {isWorkspaceCollapsed, isWorkspaceLoading} from "../data-access-workspace/workspace.selector";
-import {CollapseSidebar, ExpandSidebar} from "../data-access-workspace/workspace.actions";
+import {Component} from '@angular/core';
 
 @Component({
     selector: 'app-workspace',
     templateUrl: './workspace.component.html',
     styleUrls: ['./workspace.component.scss']
 })
-export class WorkspaceComponent implements OnInit {
-    isCollapsed: boolean = false;
-    isLoading$ = this.store.select(isWorkspaceLoading);
-    constructor(private store: Store) {
-      this.store.select(isWorkspaceCollapsed).subscribe(isCollapsed => {
-        this.isCollapsed = isCollapsed;
-      })
-    }
+export class WorkspaceComponent {
+  isCollapsed = false;
+  isButtonHidden = false;
 
-  ngOnInit() {
+  toggleSidebar() {
+    this.isCollapsed = !this.isCollapsed;
+    this.isButtonHidden = true;
   }
 
-  toggleCollapsed() {
-    if (this.isCollapsed) {
-      this.store.dispatch(ExpandSidebar())
-    } else {
-      this.store.dispatch(CollapseSidebar())
-    }
-  }
+  showButton() {
+    this.isButtonHidden = false;
+    this.isCollapsed = false;
 
+  }
 }
