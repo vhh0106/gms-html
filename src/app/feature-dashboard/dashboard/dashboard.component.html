@@ -1,244 +1,120 @@
-<div class="w-full bg-white">
-  <div
-    class="menu-header header-container items-center justify-between relative flex w-full bg-white dark:bg-navy-750 print:hidden">
-    <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>
-    <div class="mr-10 text-black font-semibold	">Reception</div>
-    <div class="mr-10 text-black font-semibold	" id="menuText1">Caddy</div>
-    <div class="mr-10 text-black font-semibold	">Golf Operation</div>
-    <div class="mr-10 text-black font-semibold	">Management</div>
-    <nz-divider class="vertical" nzType="vertical"></nz-divider>
-    <img class="flex w-8" alt="" src="./assets/icon/dotsthreevertical@2x.png"/>
-    <div class="px-1.5 flex">
-      <span>Monday, </span>
-      <span class="mr-1 text-black font-semibold">19 August 2022 </span>
-      <span> | 09:30:12 AM | </span>
-      <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>
-      <span class="mr-1">24°C |</span>
-      <span>Hello </span>
-      <span class="text-sky-500">Robert!</span>
+<div class="w-full min-h-screen	" style="background-color: #f4f4f4">
+  <div class="grid grid-cols-12 gap-4">
+    <div class="col-span-12 lg:col-span-9">
+      <div class="bg-white my-5 ml-5 mr-5 lg:ml-5 shadow-md p-5 lg:mx-0 rounded-3xl">
+        <div class="flex flex-wrap flex-between ">
+          <div class="flex items-center">
+            <app-svg-icon class="w-5 mr-2 hover:fill-blue-500" [icon]="'square'"
+                          [svgStyle]="{width: '3.5rem'}"></app-svg-icon>
+            <div class="ml-10 text-black">
+              <div>Gross sales</div>
+              <div class="font-bold text-xl">30.888.921.424</div>
+            </div>
+          </div>
+        <div class="flex items-center mr-2 filter">
+          <nz-range-picker></nz-range-picker>
+        </div>
+        </div>
+          <div class="mt-6" style="min-height: 500px" id="container"></div>
+      </div>
+      <div class="row-span-1 bg-white mt-5 ml-5 mr-5 lg:ml-5 shadow-md p-5 lg:mx-0 rounded-3xl">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 ">
+          <div class="flex items-center">
+            <app-svg-icon class="w-5 mr-2 hover:fill-blue-500" [icon]="'dashboard1'"
+                          [svgStyle]="{width: '3.5rem'}"></app-svg-icon>
+            <div class="ml-10 text-black">
+              <div class="font-semibold">Tee times sales</div>
+              <div class="font-bold text-xl">2165</div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <app-svg-icon class="w-5 mr-2 hover:fill-blue-500" [icon]="'dashboard2'"
+                          [svgStyle]="{width: '3.5rem'}"></app-svg-icon>
+            <div class="ml-10 text-black">
+              <div class="font-semibold">Tee times sales</div>
+              <div class="font-bold text-xl">20.424</div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <app-svg-icon class="w-5 mr-2 hover:fill-blue-500" [icon]="'dashboard3'"
+                          [svgStyle]="{width: '3.5rem'}"></app-svg-icon>
+            <div class="ml-10 text-black">
+              <div class="font-semibold">F&B sales</div>
+              <div class="font-bold text-xl">216.115</div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <app-svg-icon class="w-5 mr-2 hover:fill-blue-500" [icon]="'dashboard4'"
+                          [svgStyle]="{width: '3.5rem'}"></app-svg-icon>
+            <div class="ml-10 text-black">
+              <div class="font-semibold">F&B sales</div>
+              <div class="font-bold text-xl">20.424</div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <app-svg-icon class="w-5 mr-2 hover:fill-blue-500" [icon]="'dashboard5'"
+                          [svgStyle]="{width: '3.5rem'}"></app-svg-icon>
+            <div class="ml-10 text-black">
+              <div class="font-semibold">Proshop sales</div>
+              <div class="font-bold text-xl">2,165</div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <app-svg-icon class="w-5 mr-2 hover:fill-blue-500" [icon]="'dashboard6'"
+                          [svgStyle]="{width: '3.5rem'}"></app-svg-icon>
+            <div class="ml-10 text-black">
+              <div class="font-semibold">Proshop sales</div>
+              <div class="font-bold text-xl">20.424</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>
-    <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">
-      <div class="mx-2.5 flex">
-        <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>
-        <img class="w-4 h-4 self-center" alt="" src="./assets/icon/icon--outlined--directions--chevron--left@2x.png"/>
+    <div class="col-span-12 lg:col-span-3 h-screen bg-white lg:mt-5 mb-5 mr-5 ml-5 lg:mr-5 shadow-md p-5 rounded-3xl">
+      <div class="flex items-center space-y-0 px-4 py-2 flex-row justify-between sm:space-y-0 sm:px-5">
+        <div class="text-2xl font-semibold text-black">Hello Robert!</div>
+        <button nz-button class="text-xl h-8 w-8 cursor-pointer" nzPlacement="bottomRight" nzTrigger="click"
+                nz-dropdown
+                [nzDropdownMenu]="menu">
+          <span nz-icon nzType="more" nzTheme="outline"></span>
+        </button>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu>
+            <li nz-menu-item>Edit</li>
+            <li nz-menu-item>Upload Avatar</li>
+            <li nz-menu-item>Change Password</li>
+          </ul>
+        </nz-dropdown-menu>
+      </div>
+      <div class="flex justify-center mt-5">
+        <nz-avatar [nzSize]="120" nzIcon="user"></nz-avatar>
+      </div>
+      <div class="flex flex-col justify-center items-center mt-5 text-black">
+        <div class="font-semibold text-xl">Robert Warren</div>
+        <div>Golf Manager</div>
+      </div>
+      <div class="mt-8 ml-10 text-black">
+        <div class="flex mb-6">
+          <app-svg-icon class="w-5 mr-2" [icon]="'Group'"
+                        [svgStyle]="{width: '1rem'}"></app-svg-icon>
+          <div>robertwarren@gmail.com</div>
+        </div>
+        <div class="flex mb-6">
+          <app-svg-icon class="w-5 mr-2" [icon]="'Group'"
+                        [svgStyle]="{width: '1rem'}"></app-svg-icon>
+          <div>+84 0123 456789</div>
+        </div>
+        <div class="flex">
+          <app-svg-icon class="w-5 mr-2" [icon]="'Group'"
+                        [svgStyle]="{width: '1rem'}"></app-svg-icon>
+          <div>24/08/2022</div>
+        </div>
+      </div>
+      <div class="border-gray mt-5"></div>
+      <div class="flex justify-center">
+        <nz-date-picker [nzBackdrop]="false" [nzSize]="'small'" nzInline></nz-date-picker>
       </div>
     </div>
   </div>
 </div>
-<div class="account-setting">
-  <nz-sider [ngClass]="{'collapsed': isCollapsed}" (click)="showButton()">
-    <div class="sidebar">
-      <div class="sidebar-1">
-        <div class="sidebar-itembigselected">
-          <img class="icon24pxclock" alt="" src="../../../assets/images/clock.svg"/>
-          <div class="text">Dashboard</div>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="../../../assets/images/clock.svg"/>
-
-          <div class="text1">Reservation</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="../../../assets/images/clock.svg"/>
-
-          <div class="text1">Will Checkin</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="../../../assets/images/clock.svg"/>
-
-          <div class="text1">Driving Range</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault3">
-          <img class="clock-icon" alt="" src="../../../assets/images/clock.svg"/>
-
-          <div class="text1">List Golfer</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="../../../assets/images/clock.svg"/>
-
-          <div class="text1">Daily Golfer</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="../../../assets/images/clock.svg"/>
-
-          <div class="text1">Merge Group</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="../../../assets/images/clock.svg"/>
-
-          <div class="text1">Change Flight</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="../../../assets/images/clock.svg"/>
-
-          <div class="text1">Management</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="clock-icon" alt="" src="../../../assets/images/clock.svg"/>
-
-          <div class="text1">Caddy Booking</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault3">
-          <img class="clock-icon" alt="" src="../../../assets/images/clock.svg"/>
-
-          <div class="text1">Merge Invoice</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-        <div class="sidebar-itembigdefault">
-          <img class="icon24pxsettings" alt="" src="../../../assets/images/setting.svg"/>
-          <div class="text1">Setting</div>
-          <img class="arrowlineright2-icon" alt=""/>
-        </div>
-      </div>
-      <div class="sidebar-itembigdefault11">
-        <img class="icon24pxsettings" alt="" src="../../../assets/images/Log%20out.svg"/>
-        <div class="text1">Logout</div>
-        <img class="arrowlineright2-icon" alt=""/>
-      </div>
-      <div class="sidebar-itembigdefault12">
-        <img class="clock-icon" alt="" src="../../../assets/images/headphone.svg"/>
-        <div class="text1">Support</div>
-        <img class="arrowlineright2-icon" alt=""/>
-      </div>
-    </div>
-  </nz-sider>
-  <button *ngIf="!isButtonHidden" (click)="toggleSidebar()">
-    <img class="muiten" alt="" src="./assets/icon/muiten.png"/>
-  </button>
-  <div class="container">
-    <div class="instance-parent">
-      <div class="rectangle-wrapper">
-        <div class="instance-child"></div>
-      </div>
-      <div class="flex hello-robert-parent">
-        <div class="flex mt-5 ml-5 text-2xl font-semibold">
-          <div>Hello Robert!</div>
-          <button class="text-xl h-8 w-8 cursor-pointer ml-32" >
-            <span nz-icon nzType="more" nzTheme="outline"></span>
-          </button>
-        </div>
-      </div>
-      <div class="robertwarrengmailcom font-semibold">robertwarren@gmail.com</div>
-      <div class="div font-semibold">+84 0123 456789</div>
-      <div class="div1 font-semibold">24/08/2022</div>
-      <img class="vector-icon" alt="" src="./assets/icon/vector.png"/>
-      <img class="vector-icon1" alt="" src="./assets/icon/vector.png"/>
-      <img class="vector-icon2" alt="" src="./assets/icon/vector.png"/>
-      <img class="group-icon" alt="" src="./assets/icon/group.svg"/>
-      <img class="group-icon1" alt="" src="./assets/icon/group.svg"/>
-      <img class="group-icon2" alt="" src="./assets/icon/group.svg"/>
-      <img class="avatar" alt="" src="./assets/icon/ellipse-1-copy-8-1@2x.png"/>
-      <div class="robert-warren">Robert Warren</div>
-      <div class="golf-manager">Golf Manager</div>
-      <img class="group-child" alt="" src="./assets/icon/line-2.svg"/>
-      <nz-date-picker class="calendar" nzInline></nz-date-picker>
-    </div>
-    <div class="dashboard-expand-inner">
-      <div class="component-child"></div>
-    </div>
-    <div class="dashboard-expand-child">
-      <div class="component-child"></div>
-    </div>
-    <div class="chart-parent">
-      <div class="chart">
-        <div id="container"></div>
-      </div>
-    </div>
-      <div class="frame-div">
-        <div class="frame-wrapper">
-          <div class="frame-parent">
-            <div class="iconnumber-parent">
-              <div class="iconnumber">
-                <img class="icon-square" alt="" src="./assets/icon/icon-square.svg"/>
-                <div class="positive-cases-parent">
-                  <div class="positive-cases">Tee times sales</div>
-                  <div class="parent">
-                    <b class="b">2165</b>
-                  </div>
-                </div>
-              </div>
-              <div class="iconnumber">
-                <img class="icon-square1" alt="" src="./assets/icon/icon-square.svg"/>
-                <div class="positive-cases-parent">
-                  <div class="positive-cases">F&B sales</div>
-                  <div class="parent">
-                    <b class="b">216.115</b>
-                  </div>
-                </div>
-              </div>
-              <div class="iconnumber">
-                <img class="icon-square1" alt="" src="./assets/icon/icon-square.svg"/>
-                <div class="positive-cases-parent">
-                  <div class="positive-cases">Proshop sales</div>
-                  <div class="parent">
-                    <b class="b">2,165</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="iconnumber-parent">
-              <div class="iconnumber">
-                <img class="icon-square" alt="" src="./assets/icon/icon-square.svg"/>
-                <div class="positive-cases-parent">
-                  <div class="positive-cases">Tee times sales</div>
-                  <div class="parent">
-                    <b class="b">2165</b>
-                  </div>
-                </div>
-              </div>
-              <div class="iconnumber">
-                <img class="icon-square1" alt="" src="./assets/icon/icon-square.svg"/>
-                <div class="positive-cases-parent">
-                  <div class="positive-cases">F&B sales</div>
-                  <div class="parent">
-                    <b class="b">216.115</b>
-                  </div>
-                </div>
-              </div>
-              <div class="iconnumber">
-                <img class="icon-square1" alt="" src="./assets/icon/icon-square.svg"/>
-                <div class="positive-cases-parent">
-                  <div class="positive-cases">Proshop sales</div>
-                  <div class="parent">
-                    <b class="b">2,165</b>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="iconnumber-wrapper">
-        <div class="iconnumber6">
-          <img class="icon-square6" alt="" src="./assets/icon/icon-square.svg"/>
-          <div class="total-contacts-parent">
-            <div class="positive-cases">Gross sales</div>
-            <b class="b6">30.888.921.424</b>
-          </div>
-        </div>
-      </div>
-      <div class="calendar-1-01-1-parent">
-        <img class="calendar-1-01-1-icon" alt="" src="./assets/icon/calendar101-1.svg"/>
-        <div class="b">
-          <span>Monday, </span>
-          <span class="text-black font-semibold august-20221">09 August 2022 </span>
-        </div>
-        <img class="calendar-1-01-1-icon" alt="" src="./assets/icon/calendar101-2.svg"/>
-        <div class="b">
-          <span>Monday, </span>
-          <span class="text-black font-semibold august-20221">09 August 2022 </span>
-        </div>
-      </div>
-    </div>
-  </div>
-

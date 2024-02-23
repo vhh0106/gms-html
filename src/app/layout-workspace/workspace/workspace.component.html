@@ -1,39 +1,98 @@
-<!--<div class="menu-header">-->
-<!--  <div class="flex mx-5 my-4 items-center justify-center text-black">-->
-<!--    <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>-->
-<!--    <div class="mr-10 font-semibold	">Reception</div>-->
-<!--    <div class="mr-10 font-semibold	" id="menuText1">Caddy</div>-->
-<!--    <div class="mr-10 font-semibold	">Golf Operation</div>-->
-<!--    <div class="mr-10 font-semibold	">Management</div>-->
-<!--    <nz-divider class="vertical" nzType="vertical"></nz-divider>-->
-<!--    <img class="flex w-8" alt="" src="./assets/icon/dotsthreevertical@2x.png"/>-->
-<!--    <div class="px-1.5 flex">-->
-<!--      <span>Monday, </span>-->
-<!--      <span class="mr-1 font-semibold">19 August 2022 </span>-->
-<!--      <span> | 09:30:12 AM | </span>-->
-<!--      <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>-->
-<!--      <span class="mr-1">24°C |</span>-->
-<!--      <span>Hello </span>-->
-<!--      <span class="text-sky-500">Robert!</span>-->
-<!--    </div>-->
-<!--    <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>-->
-<!--    <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">-->
-<!--      <div class="mx-2.5 flex">-->
-<!--        <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>-->
-<!--        <img class="w-4 h-4 self-center" alt="" src="./assets/icon/icon&#45;&#45;outlined&#45;&#45;directions&#45;&#45;chevron&#45;&#45;left@2x.png"/>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<div class="flex w-screen h-screen pt-10">
+<div class="flex flex-col bg-white">
+  <div class="relative flex flex-wrap items-center justify-between w-full bg-white group py-5 shrink-0 px-5">
+    <div>
+      <img style="width: 149px; height: 37px" class="flex mr-8" alt="" src="./assets/icon/logo01-1@2x.png"/>
+    </div>
+    <div class="items-center justify-between hidden gap-12 text-black lg:flex">
+        <a class="text-sm font-semibold hover:text-dark-grey-900" href="">Reception</a>
+        <a class="text-sm font-semibold hover:text-dark-grey-900" href="">Caddy</a>
+        <a class="text-sm font-semibold hover:text-dark-grey-900" href="">Golf Operation</a>
+        <a class="text-sm font-semibold hover:text-dark-grey-900" href="">Management</a>
+        <app-svg-icon (click)="toggleMenu()" class="w-5 mr-2 hover:fill-blue-500" [icon]="'DotsThreeVertical'" [svgStyle]="{width: '2rem'}"></app-svg-icon>
+    </div>
+    <nz-divider class="vertical hidden lg:flex" nzType="vertical" style="min-height: 2rem"></nz-divider>
+    <div class="items-center hidden gap-4 lg:flex">
+      <div class="px-1.5 flex">
+        <span>Monday, </span>
+        <span class="mr-1 font-semibold">19 August 2022 </span>
+        <span> | 09:30:12 AM | </span>
+        <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>
+        <span class="mr-1">24°C |</span>
+        <span>Hello </span>
+        <span class="text-sky-500">Robert!</span>
+      </div>
+      <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>
+      <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">
+        <div class="mx-2.5 flex">
+          <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="{'hidden': !isMenuOpen, 'block': isMenuOpen}" class="transition-all duration-300 ease-in-out shadow-main w-full overflow-hidden bg-white py-4 rounded-2xl max-h-64 top-full" style="margin-left: 200px">
+      <div class="flex gap-12">
+        <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Business Department</a>
+        <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Report</a>
+        <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Locker</a>
+        <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">F&B</a>
+        <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Proshop&B</a>
+      </div>
+      <div class="flex gap-12 mt-3">
+        <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Inventory</a>
+        <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Online Booking</a>
+        <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Setting</a>
+      </div>
+
+    </div>
+    <button onclick="(() => { this.closest('.group').classList.toggle('open')})()" class="flex lg:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M3 8H21C21.2652 8 21.5196 7.89464 21.7071 7.70711C21.8946 7.51957 22 7.26522 22 7C22 6.73478 21.8946 6.48043 21.7071 6.29289C21.5196 6.10536 21.2652 6 21 6H3C2.73478 6 2.48043 6.10536 2.29289 6.29289C2.10536 6.48043 2 6.73478 2 7C2 7.26522 2.10536 7.51957 2.29289 7.70711C2.48043 7.89464 2.73478 8 3 8ZM21 16H3C2.73478 16 2.48043 16.1054 2.29289 16.2929C2.10536 16.4804 2 16.7348 2 17C2 17.2652 2.10536 17.5196 2.29289 17.7071C2.48043 17.8946 2.73478 18 3 18H21C21.2652 18 21.5196 17.8946 21.7071 17.7071C21.8946 17.5196 22 17.2652 22 17C22 16.7348 21.8946 16.4804 21.7071 16.2929C21.5196 16.1054 21.2652 16 21 16ZM21 11H3C2.73478 11 2.48043 11.1054 2.29289 11.2929C2.10536 11.4804 2 11.7348 2 12C2 12.2652 2.10536 12.5196 2.29289 12.7071C2.48043 12.8946 2.73478 13 3 13H21C21.2652 13 21.5196 12.8946 21.7071 12.7071C21.8946 12.5196 22 12.2652 22 12C22 11.7348 21.8946 11.4804 21.7071 11.2929C21.5196 11.1054 21.2652 11 21 11Z"
+          fill="black"></path>
+      </svg>
+    </button>
+    <div
+      class="flex lg:hidden items-center transition-all duration-300 ease-in-out flex-col shadow-main justify-center w-full gap-3 overflow-y-auto bg-white max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-64 top-full">
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Reception</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Caddy</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Golf Operation</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Management</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Business Department</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Report</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Locker</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">F&B</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Proshop&B</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Inventory</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Online Booking</a>
+      <a class="text-sm font-semibold text-black hover:text-dark-grey-900" href="">Setting</a>
+      <div class="px-1.5">
+        <span>Monday, </span>
+        <span class="mr-1 font-semibold">19 August 2022 </span>
+        <span> | 09:30:12 AM </span>
+        <div class="flex justify-center">
+          <img class="w-4 h-4 self-center mx-1" alt="" src="./assets/icon/heavyrainy-1@2x.png"/>
+          <span class="mr-1">24°C |</span>
+          <span>Hello </span>
+          <span class="text-sky-500">Robert!</span>
+        </div>
+      </div>
+      <img class="w-6	h-6 mr-1.5" src="./assets/icon/Frame 27.png" alt=""/>
+      <div style="border: 0.7px solid #0090e2;" class="flex rounded-lg">
+        <div class="mx-2.5 flex">
+          <div class="p-1.5 text-sky-600">WestLakes Golf & Villas</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="flex h-screen pt-10" style="background-color: #F4F4F4">
   <div [ngClass]="{'collapsed': isCollapsed}" (click)="showButton()"
        class="flex flex-col h-full overflow-hidden text-gray-400 rounded-tr-3xl px-2" style="background-color: #9ED000">
-    <div class="menu is-scrollbar-hidden items-center flex grow flex-col space-y-2 overflow-y-auto pt-3">
+    <div class="menu is-scrollbar-hidden items-center flex grow flex-col space-y-2 overflow-y-auto pt-3 ">
       <a class="flex items-center text-black w-full h-9 px-3 rounded-3xl hover:bg-white hover:text-blue-500"
          href="#">
         <app-svg-icon class="w-5 mr-2 hover:fill-blue-500" [icon]="'clock'"
                       [svgStyle]="{width: '1rem'}"></app-svg-icon>
-        <span class="text-sm font-medium">Dasboard</span>
+        <span class="text-sm font-medium">Dashboard</span>
       </a>
       <a class="flex items-center text-black w-full h-10 px-3 rounded-3xl hover:bg-white hover:text-blue-500" href="#">
         <app-svg-icon class="w-5 mr-2 hover:text-blue-500" [icon]="'clock'"

@@ -15,17 +15,6 @@ export class DashboardComponent implements OnInit {
 
   }
 
-  toggleSidebar() {
-    this.isCollapsed = !this.isCollapsed;
-    this.isButtonHidden = true;
-  }
-
-  showButton() {
-    this.isButtonHidden = false;
-    this.isCollapsed = false;
-
-  }
-
   getChart(): void {
     const options: Highcharts.Options = {
       chart: {
@@ -71,9 +60,9 @@ export class DashboardComponent implements OnInit {
           },
           data: [  {name: "Sun", y: 1 },
             {name: "Mon", y: 2 },
-            {name: "Tue", y: 1 },
+            {name: "Tue", y: 6 },
             {name: "Wed", y: 1 },
-            {name: "Thu", y: 1 },
+            {name: "Thu", y: 5 },
             {name: "Fri", y: 1 },
             {name: "Sat", y: 0 }],
         },

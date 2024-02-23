@@ -8,10 +8,13 @@ import {Component} from '@angular/core';
 export class WorkspaceComponent {
   isCollapsed = false;
   isButtonHidden = false;
-
+  isMenuOpen = false;
   toggleSidebar() {
     this.isCollapsed = !this.isCollapsed;
     this.isButtonHidden = true;
+  }
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
   showButton() {

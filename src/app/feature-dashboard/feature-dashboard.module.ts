@@ -14,30 +14,32 @@ import {NzLayoutModule} from "ng-zorro-antd/layout";
 import {NzDropDownModule} from "ng-zorro-antd/dropdown";
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import {D} from "@angular/cdk/keycodes";
+import {SharedIconModule} from "../shared-icon/shared-icon.module";
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: DashboardComponent,
-        data: {breadcrumb: 'dashboard'},
-      }
-    ]),
-    NzIconModule,
-    NzInputModule,
-    NzCheckboxModule,
-    NzDividerModule,
-    NzAvatarModule,
-    NzCardModule,
-    NzDatePickerModule,
-    SharedFieldsModule,
-    NzLayoutModule,
-    NzDropDownModule,
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        RouterModule.forChild([
+            {
+                path: '',
+                component: DashboardComponent,
+                data: {breadcrumb: 'dashboard'},
+            }
+        ]),
+        NzIconModule,
+        NzInputModule,
+        NzCheckboxModule,
+        NzDividerModule,
+        NzAvatarModule,
+        NzCardModule,
+        NzDatePickerModule,
+        SharedFieldsModule,
+        NzLayoutModule,
+        NzDropDownModule,
+        SharedIconModule,
+    ],
   declarations: [
     DashboardComponent
   ]
